@@ -1,7 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@android:style/Theme.Holo.Light"
     android:layout_width="fill_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
-    android:padding="6dip" >
+    android:padding="6dip"
+    android:background="#FFBB33">
 
     <ImageView
         android:id="@+id/icon"

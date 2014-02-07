@@ -1,12 +1,10 @@
 package com.jk.easynotes;
 
-import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.textservice.TextInfo;
-import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
@@ -40,6 +38,11 @@ public class NoteAdapter extends ArrayAdapter<Note> {
         secondLine.setText(mNotes.get(position).getNote());
         }else{
             return inflater.inflate(android.R.layout.simple_list_item_1,parent,false);
+        }
+        if((position%2)==0){
+            rowView.setBackgroundColor(Color.parseColor("#EE28A7"));
+        }else{
+            rowView.setBackgroundColor(Color.parseColor("#EE7691"));
         }
         return rowView;
     }
