@@ -89,7 +89,8 @@ public class MainActivity extends Activity {
         alerDialogBuilder.setCancelable(false).setPositiveButton("Add",new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Note noteNew=notesDAO.createNote(new Note(noteName.getText().toString(),"hovnovno",noteDecribe.getText().toString()));
+
+                Note noteNew=notesDAO.createNote(new Note(noteName.getText().toString(),"",noteDecribe.getText().toString()));
                 noteAdapter.updateNotes(noteNew);
             }
         }).setNegativeButton("Cancel",new DialogInterface.OnClickListener() {
@@ -105,13 +106,6 @@ public class MainActivity extends Activity {
         Toast.makeText(this,"Added",Toast.LENGTH_LONG);
 
     }
-
-
-
-
-
-
-
 
 
     @Override

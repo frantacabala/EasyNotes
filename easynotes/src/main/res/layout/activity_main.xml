@@ -21,7 +21,7 @@
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/linearLayout"
-        android:background="#AA66CC" />
+        android:background="@drawable/list_gradient" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.89"
             android:text="@string/add_note"
-            android:background="#9933CC"
+            android:background="@drawable/btn_gradient"
             android:onClick="addNote"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/delall_notes"
-            android:background="#9933CC"
+            android:background="@drawable/btn_gradient"
             android:onClick="deleteAll"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"

@@ -1,5 +1,7 @@
 <resources>
 
     <color name="black_overlay">#66000000</color>
+    <color name="btn_pink_dark">#3D0F4C</color>
+    <color name="btn_pink_light">#CC33FF</color>
 
 </resources>
